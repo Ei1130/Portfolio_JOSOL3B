@@ -31,20 +31,32 @@
         <div class="img-container">
 
     <div class="align">
-        <img src="Quiz 1.jpg" >
+        <img src="Quiz 1.jpg" onclick="openImage(this)">
         <h2>Activity 1 (placeholder)</h2>
     </div>
 
     <div class="align">
-        <img src="Quiz 1.jpg" >
+        <img src="Quiz 1.jpg" onclick="openImage(this)">
         <h2>Activity 2 (placeholder)</h2>
     </div>
 
     <div class="align">
-        <img src="Quiz 1.jpg" >
+        <img src="Quiz 1.jpg" onclick="openImage(this)">
         <h2>Activity 3 (placeholder)</h2>
     </div>
+    <div id="imagePopup" class="image-popup"
+     onclick="closeImage()">
 
+    <button class="close-button"
+            onclick="closeImage()"
+            aria-label="Close image">
+        &times;
+    </button>
+
+    <img id="popupImage" src="" alt="Enlarged activity image"
+         onclick="event.stopPropagation()">
+</div>
+<script src="picture-zoom.js"></script>
 </div>
 
     </div>

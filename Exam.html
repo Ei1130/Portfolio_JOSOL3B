@@ -29,8 +29,8 @@
     <div class="img-container">
 
         <div class="align">
-            <img src="Quiz 1.jpg" >
-            <h2>Midterm Exam (placeholder)</h2>
+            <img src="MidtermExam_Result.jpg" onclick="openImage(this)">
+            <h2>Midterm Exam: 50/70 +10</h2>
         </div>
     </div>
 
@@ -39,12 +39,27 @@
     <div class="img-container">
 
         <div class="align">
-        <img src="Quiz 1.jpg" >
+        <img src="MidtermExam_Result.jpg" onclick="openImage(this)">
         <h2>Final Exam (placeholder)</h2>
         </div>
     </div>
+    <div id="imagePopup" class="image-popup"
+     onclick="closeImage()">
+
+    <button class="close-button"
+            onclick="closeImage()"
+            aria-label="Close image">
+        &times;
+    </button>
+
+    <img id="popupImage" src="" alt="Enlarged exam image"
+         onclick="event.stopPropagation()">
 </div>
+</div>
+<script src="picture-zoom.js"></script>
 </section>
+
+
 
 
 </body>

@@ -30,22 +30,33 @@
         <div class="img-container">
 
     <div class="align">
-        <img src="Quiz 1.jpg" alt="Quiz 1">
+        <img src="Quiz 1.jpg" alt="Quiz 1" onclick="openImage(this)">
         <h2>Quiz 1 : 14/20</h2>
     </div>
 
     <div class="align">
-        <img src="Quiz 1.jpg" alt="Quiz 2">
+        <img src="Quiz 1.jpg" alt="Quiz 2" onclick="openImage(this)">
         <h2>Quiz 2 (placeholder)</h2>
     </div>
 
     <div class="align">
-        <img src="Quiz 1.jpg" alt="Quiz 3">
+        <img src="Quiz 1.jpg" alt="Quiz 3" onclick="openImage(this)">
         <h2>Quiz 3 (placeholder)</h2>
     </div>
+ <div id="imagePopup" class="image-popup"
+     onclick="closeImage()">
 
+    <button class="close-button"
+            onclick="closeImage()"
+            aria-label="Close image">
+        &times;
+    </button>
+
+    <img id="popupImage" src="" alt="Enlarged quiz image"
+         onclick="event.stopPropagation()">
 </div>
-
+</div>
+<script src="picture-zoom.js"></script>
     </div>
 </section>
 
